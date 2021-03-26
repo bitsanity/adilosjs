@@ -1,0 +1,23 @@
+{
+  "name": "adilosjs",
+  "version": "1.0.0",
+  "description": "Key/Signature Exchange Protocol",
+  "main": "index.js",
+  "scripts": {
+    "test": "selfTest()"
+  },
+  "keywords": [
+    "adilos",
+    "key",
+    "digital",
+    "signature",
+    "protocol"
+  ],
+  "author": "bitsanity",
+  "license": "ISC",
+  "dependencies": {
+    "base64-js": "^1.5.1",
+    "hash.js": "^1.1.7",
+    "secp256k1": "^4.0.2"
+  }
+}
