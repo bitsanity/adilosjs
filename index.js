@@ -202,16 +202,18 @@ exports.selfTest = function() {
   console.log( "Challenge:\n\n" + chB64 + "\n\n" );
 
   // pretend some keymaster made this keypair independently
-  var privk = "0xc85ef7d79691fe79573b1a7064c19c1a9819ebdbd1faaab1a8ec92344438aaf4";
-  var pubk = "030947751e3022ecf3016be03ec77ab0ce3c2662b4843898cb068d74f698ccc8ad";
+  var privk =
+    "0xc85ef7d79691fe79573b1a7064c19c1a9819ebdbd1faaab1a8ec92344438aaf4";
+  var pubk =
+    "030947751e3022ecf3016be03ec77ab0ce3c2662b4843898cb068d74f698ccc8ad";
 
   let rspB64 =
     module.exports.makeResponse( chB64, module.exports.fromHexString(privk) );
 
   console.log( "Response:\n\n" + rspB64 + "\n\n" );
 
-  let apubkey =
-    module.exports.toHexString( module.exports.validateResponse(rspB64, chB64) );
+  let apubkey = module.exports.toHexString(
+    module.exports.validateResponse(rspB64, chB64) );
 
   if (apubkey === pubk)
     console.log( "PASS: Responder's pubkey proved to be:\n\t" + apubkey );

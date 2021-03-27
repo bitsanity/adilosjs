@@ -2,6 +2,8 @@
   "name": "adilosjs",
   "version": "1.0.0",
   "description": "Key/Signature Exchange Protocol",
+  "author": "bitsanity",
+  "repository": "https://github.com/bitsanity/adilosjs",
   "main": "index.js",
   "scripts": {
     "test": "selfTest()"
@@ -13,7 +15,6 @@
     "signature",
     "protocol"
   ],
-  "author": "bitsanity",
   "license": "ISC",
   "dependencies": {
     "base64-js": "^1.5.1",
