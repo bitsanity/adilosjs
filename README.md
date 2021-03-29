@@ -16,3 +16,10 @@ cryptographic challenge is presented and a response is returned.
 If the response is correct then the exchange proves that the responder truly
 holds the public key included in the response.
 
+**angular**
+
+If using Angular, add these lines in the `polyfills.ts` file:
+
+    (window as any) .global = window;
+    // @ ts-ignore
+    window.Buffer = window.Buffer || require ('buffer'). Buffer;
